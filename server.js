@@ -3,8 +3,8 @@ const path = require ('path');
 const app = express();
 const port = process.env.PORT || 3000;
 
-app.use(express.static(__dirname + '/dist/firstFullStk'));
+app.use(express.static(__dirname + '/dist/first-full-stk/'));
 
-app.get('/', (req, res) => res.sendFile(path.join(__dirname + '/dist/firstFullStk/index.html')))
+app.get('/', (req, res) => res.sendFile(path.join(__dirname + '/dist/first-full-stk/index.html')))
 
 app.listen(port, () => console.log(`Example app listening on port ${port}!`))
